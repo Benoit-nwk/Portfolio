@@ -1,0 +1,46 @@
+[
+{
+      "id": 1,
+      "image": "../public/projets/portfolio.webp",
+      "titre": "Portfolio",
+      "description": "Projet réalisé post formation. Il contient ma biographie, mes Skills, mes coordonnées ainsi que une présentation de mes projets.",
+      "frameworks": "Vue.js",
+      "langages": "HTML , CSS , JavaScript",
+      "technologies": "Vue-Router",
+      "git": "https://github.com/Benoit-nwk"
+},
+
+{
+      "id": 2,
+      "image": "../public/projets/kayu.webp",
+      "titre": "Kayu",
+      "description": "Projet réalisé en groupe de 2 personnes durant la formation. Il s'agit d'une reproduction d'application nommée 'Yuka', elle présente une partie frontend et une partie backend. Ce projet est composé d'un CRUD (create, read, update, delete). Il est possible de scanner un article qui fait un appel API pour collecter les informations du produit❗Projet Mobile uniquement❗",
+      "frameworks": "Vuejs, Laravel",
+      "langages": "HTML , CSS , JavaScript, PHP, SQL",
+      "technologies": "Vue-Router, Axios, API: OpenFoodFacts, MySQL, Laragon, Breeze, Sanctum",
+      "git": "https://github.com/Benoit-nwk"
+
+},
+
+{
+      "id": 3,
+      "image": "./public/projets/anthonym.webp",
+      "titre": "AnthonyM.Coiffure",
+      "description": "Projet réalisé durant le stage de formation. Il s'agit ici d'une refonte du site internet vitrine d'un salon de coiffure. Le site est composé de plusieurs pages, il est possible de consulter les tarifs et de voir les horaires d'ouverture.",
+      "frameworks": "Vue.js",
+      "langages": "HTML , CSS , JavaScript",
+      "technologies": "Vue-Router",
+      "git": "https://github.com/Benoit-nwk/Anthony-M-Coiffure"
+},
+
+{
+      "id": 4,
+      "image": "./public/projets/calculator.webp",
+      "titre": "Calculator 3000",
+      "description": "Projet réalisé durant la formation. Ici, le but était de réaliser une calculatrice en utilisant les bases de Vue.js. La calculatrice est fonctionnelle et permet de réaliser des opérations simples.",
+      "frameworks": "Vue.js",
+      "langages": "HTML , CSS , JavaScript",
+      "technologies": "",
+      "git": "https://github.com/Benoit-nwk/Calculator3000"
+}
+]
