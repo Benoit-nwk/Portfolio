@@ -3,6 +3,7 @@ import Accueil from '../views/Accueil.vue'
 import Contact from '../views/Contact.vue'
 import Apropos from '../views/Apropos.vue'
 import Projets from '../views/Projets.vue'
+import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/projets',
       name: 'Projets',
       component: Projets,
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: NotFound,
     },
   ],
   // Retour en haut de page a chaque changement de route
