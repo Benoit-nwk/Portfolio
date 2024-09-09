@@ -1,7 +1,7 @@
 [
 {
       "id": 1,
-      "image": "../src/components/images/projets/portfolio.webp",
+      "image": "../public/projets/portfolio.webp",
       "titre": "Portfolio",
       "description": "Projet réalisé post formation. Il contient ma biographie, mes Skills, mes coordonnées ainsi que une présentation de mes projets.",
       "frameworks": "Vue.js",
