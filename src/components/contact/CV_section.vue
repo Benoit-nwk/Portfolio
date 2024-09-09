@@ -1,6 +1,6 @@
 <script setup>
 const downloadPdf = () => {
-      const pdf = "./public/pdf/CV_Nowak_Benoit.pdf";
+      const pdf = "../src/components/pdf/CV_Nowak_Benoit.pdf";
       window.open(pdf);
 }
 </script>
