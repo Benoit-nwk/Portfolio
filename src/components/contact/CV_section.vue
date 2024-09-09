@@ -1,6 +1,6 @@
 <script setup>
 const downloadPdf = () => {
-      const pdf = require("../src/components/pdf/CV_Nowak_Benoit.pdf");
+      const pdf = process.env.BASE_URL + "CV_Nowak_Benoit.pdf";
       window.open(pdf);
 }
 </script>
