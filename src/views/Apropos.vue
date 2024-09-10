@@ -42,18 +42,21 @@ import MesProjets from "@/components/boutons/MesProjets.vue";
 
 <style scoped>
 
-
+img{
+    width: 60%;
+   
+}
 @media screen and (min-width: 1024px) {
       
 .container {
-      margin: 8rem 0;
+      margin: 8rem 3rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
 }
 
 img{
-      width: 40%;
+      width: 60%;
 }
 
 }

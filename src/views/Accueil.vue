@@ -42,6 +42,11 @@ import Fin from "@/components/footer/Fin.vue";
     justify-content: center;
 }
 
+img{
+    width: 80%;
+   
+}
+
 @media screen and (min-width: 1024px) {
     .grille_pour_desktop {
         margin: 8rem 0;
@@ -50,9 +55,10 @@ import Fin from "@/components/footer/Fin.vue";
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
+        margin-right: 10rem;
 
         img{
-            width: 40%;
+            width: 60%;
         }
 
 }
