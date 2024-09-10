@@ -16,7 +16,7 @@ const skillsTab = ["VsCode", "PhpStorm", "HTML", "CSS", "JavaScript", "PHP", "Vu
 
       <div class="skills">
             <hr>
-            <h2>Compétences</h2>
+            <h2>Skills</h2>
             <div class="skillstab">
                   <span v-for="skills in skillsTab">{{skills}}</span>
             </div>
