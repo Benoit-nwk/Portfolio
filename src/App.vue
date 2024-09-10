@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/vue"
 
 <template>
         <RouterView/>
+        <SpeedInsights />
 </template>
 
 <style scoped>
