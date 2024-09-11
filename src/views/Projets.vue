@@ -2,6 +2,7 @@
 import NavBar_head from "@/components/navbar/NavBar_head.vue";
 import NavBar_foot from "@/components/navbar/NavBar_foot.vue";
 import SectionProjets from "@/components/projets/SectionProjets.vue";
+import SectionApprentissage from "@/components/projets/SectionApprentissage.vue";
 import Fin from "@/components/footer/Fin.vue";
 </script>
 
@@ -12,6 +13,7 @@ import Fin from "@/components/footer/Fin.vue";
 
       <main>
             <SectionProjets></SectionProjets>
+            <SectionApprentissage></SectionApprentissage>
       </main>
 
       <footer>

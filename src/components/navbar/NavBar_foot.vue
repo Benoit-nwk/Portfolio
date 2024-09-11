@@ -14,13 +14,19 @@ const aPropos = () => {
 const contact = () => {
         router.push('/contact');
 }
+
+const projets = () => {
+        router.push('/projets');
+}
 </script>
 
 <template>
 <nav>
         <button @click="home"><img src="../icones/accueil.svg" alt="accueil_icone"></button>
         <button @click="aPropos"><img src="../icones/a-propos.svg" alt="a-propos_icone"></button>
+        <button @click="projets"><img src="../icones/projets.svg" alt="projets_icone"></button>
         <button @click="contact"><img src="../icones/contact.svg" alt="contact_icone"></button>
+        
 </nav>
 </template>
 
@@ -35,6 +41,11 @@ nav{
         justify-content: space-around;
         padding: 10px 0;
         box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+img{
+        width: 2rem;
+        height: 2rem;
 }
 
 button{

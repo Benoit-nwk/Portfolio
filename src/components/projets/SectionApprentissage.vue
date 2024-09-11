@@ -1,32 +1,19 @@
 <script setup>
-import projetsPro from '../projets/projetsPro.json';
+import apprentissage from '../projets/apprentissage.json';
 import { ref } from 'vue';
-const projetsData = ref(projetsPro);
+const apprentissageData = ref(apprentissage);
 </script>
 
 <template>
-      <h1>Mes Réalisations</h1>
+                  <h1>En cours d'apprentissage</h1>
       <section>
-            <div class="card" v-for="projet in projetsData" :key="projet.id">
-                  <div class="titre">
-                        <h2>{{ projet.titre }}</h2>
-                  </div>
-                  <div class="content">
-                  <img v-if="projet.image" class="imgProjet" :src=projet.image :alt=projet.titre>
-                  <h4>Description:</h4>
-                  <p>{{ projet.description }}</p>
-                  <h4>Frameworks:</h4>
-                  <p>{{ projet.frameworks }}</p>
-                  <h4>Langages:</h4>
-                  <p>{{ projet.langages }}</p>
-                  <h4 v-show="projet.technologies">Technologies:</h4>
-                  <p v-show="projet.technologies">{{ projet.technologies }}</p>
-                  <h4>Liens:</h4>
-                  <a :href="projet.git"><img src="../icones/github.svg" alt="lienGithub"></a>
-            </div>
+            <div class="card" v-for="cours in apprentissageData" :key="cours.id">
+                  <h2>{{ cours.titre }}</h2>
+                  <p>{{ cours.description }}</p>
+                  <h4 v-show="cours.git">Liens:</h4>
+                  <a :href="cours.git" v-show="cours.git"><img src="../icones/github.svg" alt="lienGithub"></a>
             </div>
       </section>
-
 
 </template>
 
@@ -38,7 +25,7 @@ h1{
 
 section{
       padding: 0 1rem;
-      margin:2rem;
+      margin: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;

@@ -1,0 +1,15 @@
+[
+      {
+            "id": 1,
+            "image":"/images/projets/portfolio.webp",
+            "titre": "React.js",
+            "description": "Apprentissage de la bibliothèque React.js en réalisant un jeu de tic tac toe. Je réalise aussi un cours en français sur React.js disponible sur Github.",
+            "git": "https://github.com/Benoit-nwk/Tic-Tac-Toe-Cours-React.js"
+      },
+      {
+            "id": 2,
+            "titre": "Typescript",
+            "description": "Je compte apprendre le langage Typescript prochaînement afin de d'améliorer et de protéger mon code Javascript.",
+            "git": ""
+      }
+      ]
