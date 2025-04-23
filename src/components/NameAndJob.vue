@@ -4,7 +4,7 @@
 <template>
     <div class="container">
         <div class="text">
-            <p>Développeur web</p>
+            <p>Développeur fullstack</p>
             <h1>Benoît Nowak</h1>
             <p>Réalisation de sites web responsives</p>
         </div>
