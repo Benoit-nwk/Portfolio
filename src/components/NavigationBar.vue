@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router';
     <nav>
         <router-link to="/about">A propos</router-link>
         <router-link to="/projects">Mes projets</router-link>
-        <img src="./icons/IconPortfolio.png" alt="Logo-protfolio">
+        <router-link to="/"><img src="./icons/IconPortfolio.png" alt="Logo-protfolio"></router-link>
         <router-link to="/technologies">Technologies</router-link>
         <router-link to="/contact">Contact</router-link>
     </nav>
