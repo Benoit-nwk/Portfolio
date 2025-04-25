@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "image":"../assets/images/portfolio.png",
+        "image":"/icons/logo_portfolio.png",
         "name": "Portfolio",
-        "repository": "https://github.com/username/portfolio-website"
+        "repository": "https://github.com/Benoit-nwk/Portfolio"
     },
     {
         "id": 2,
-        "image":"../assets/images/portfolio.png",
+        "image":"/icons/logo_kayu.png",
         "name": "Kayu",
-        "repository": "https://github.com/username/task-manager-app"
+        "repository": "https://github.com/Benoit-nwk/Kayu"
     },
     {
         "id": 3,
-        "image":"../assets/images/portfolio.png",
+        "image":"/icons/logo_am.png",
         "name": "Anthony m coiffure",
-        "repository": "https://github.com/username/ecommerce-platform"
+        "repository": "https://github.com/Benoit-nwk/Anthony-M-Coiffure"
     }
 ]
