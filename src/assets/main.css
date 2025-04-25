@@ -40,3 +40,14 @@ h1{
   margin-top: 1rem;
   color: var(--primary-color);
 }
+
+table{
+  width: 100%;
+  margin: 2rem 0;
+  font-size: 24px;
+  text-align: center;
+  >thead{
+    color: var(--primary-color);
+    
+  }
+}
