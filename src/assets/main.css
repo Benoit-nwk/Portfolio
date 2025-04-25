@@ -4,6 +4,9 @@
   --background-color: #1B1B1B;
   --text-color: #F5F5F5;
   --text-font: "Roboto", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--background-color);
+  scroll-behavior: smooth;
 }
 body,html{
   margin: 0;
@@ -48,6 +51,22 @@ table{
   text-align: center;
   >thead{
     color: var(--primary-color);
-    
   }
+}
+
+.button{
+  background: none;
+  color: var(--text-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  scale: 1.05;
 }

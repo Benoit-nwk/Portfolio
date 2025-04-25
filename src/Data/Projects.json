@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image":"../assets/images/portfolio.png",
+        "name": "Portfolio",
+        "repository": "https://github.com/username/portfolio-website"
+    },
+    {
+        "id": 2,
+        "image":"../assets/images/portfolio.png",
+        "name": "Kayu",
+        "repository": "https://github.com/username/task-manager-app"
+    },
+    {
+        "id": 3,
+        "image":"../assets/images/portfolio.png",
+        "name": "Anthony m coiffure",
+        "repository": "https://github.com/username/ecommerce-platform"
+    }
+]

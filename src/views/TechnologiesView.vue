@@ -57,8 +57,10 @@ p{
     text-align: center;
     margin-bottom: 4rem;
 }
+
 h1{
     text-align: center;
     margin-top: 4rem;
+    font-size: 48px;
 }
 </style>
