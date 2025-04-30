@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+
 :root{
   --primary-color: #1A936F;
   --background-color: #1B1B1B;
@@ -34,13 +46,14 @@ nav{
 }
 
 p{
-  font-size: 24px;
+  font-size: larger;
+  text-align: center;
 }
 
 h1{
-  font-size: 96px;
+  font-size: 4rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 3rem;
   color: var(--primary-color);
 }
 
@@ -70,3 +83,21 @@ table{
   color: var(--background-color);
   scale: 1.05;
 }
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.elipse {
+  position: absolute;
+  width: 40%;
+  animation: rotate 10s linear infinite;
+  transform-origin: center;
+  z-index: 1;
+}
+

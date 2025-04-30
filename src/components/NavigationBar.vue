@@ -4,11 +4,11 @@ import { RouterLink } from 'vue-router';
 
 <template>
     <nav>
-        <router-link to="/about">A propos</router-link>
-        <router-link to="/projects">Mes projets</router-link>
-        <router-link to="/"><img class="return_to_home" src="./icons/IconPortfolio.png" alt="Logo-protfolio"></router-link>
-        <router-link to="/technologies">Technologies</router-link>
-        <router-link to="/contact">Contact</router-link>
+        <router-link to="/" title="Page d'accueil">Accueil</router-link>
+        <router-link to="/about" title="A propos">A propos</router-link>
+        <router-link to="/" title="Page d'accueil"><img class="return_to_home" src="./icons/IconPortfolio.png" alt="Logo-protfolio"></router-link>
+        <router-link to="/projects" title="Mes projets">Mes projets</router-link>
+        <router-link to="/contact" title="Contactez-moi!">Contact</router-link>
     </nav>
 </template>
 
