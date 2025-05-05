@@ -9,7 +9,7 @@ import Projects from '@/components/Projects.vue';
     <a href="https://github.com/Benoit-nwk" target="_blank" title="Mon Github"><img src="/public/otherProjects.png" alt="other projects" class="other-projects" /></a>
     <p>Voici quelques projets sur lesquels j'ai travaillé.</p>
     <Projects />
-    
+    <a href="https://github.com/Benoit-nwk" class="other-projects-phone">Mes autres projets</a>
 </template>
 
 <style scoped>

@@ -40,4 +40,17 @@ import Contact from '@/components/Contact.vue';
   content:"Loading..."
 }
 @keyframes loading {to{clip-path: inset(0 -1ch 0 0)}}
+
+@media screen and (max-width: 768px) {
+  p{
+    margin: 0 2rem;
+  }
+  .loader-container {
+    margin: 2rem 0;
+  }
+  .loader {
+    font-size: 20px;
+    margin: 2rem 0;
+  }
+}
 </style>

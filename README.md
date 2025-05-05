@@ -1,29 +1,49 @@
 # Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+## 1. Présentation du projet
 
-## Recommended IDE Setup
+Le projet "Portfolio", est une application web  frontend réalisée avec Vue.js.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Le but de l'application est de présenter les caractéristiques professionnelles de mr Nowak Benoît.
 
-## Customize configuration
+## 2. Architecture
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Le site utilise l'architecture MVVM (model view viewmodel) de Vue.js
 
-## Project Setup
+![alt text](./GitHub/image.png)
 
-```sh
-npm install
-```
+Le but est de maintenir un code simple, propre, efficace et de séparer le tout en "components" qui seront réutilisables - ex: la navbar.
 
-### Compile and Hot-Reload for Development
+## 3. Installation
 
-```sh
-npm run dev
-```
+Pour pouvoir utiliser le projet en local sur votre machine:
 
-### Compile and Minify for Production
+1. Avoir installé Node.js sur votre machine. 
 
-```sh
-npm run build
-```
+2. Cloner le repo sur votre machine 
+3. Se placer dans le dossier du repo sur votre machine puis ouvrir un terminal a partir de ce dernier
+4. Utilisez la commande : `npm install`
+5. Utilisez la commande : `npm run dev`
+6. Utilisez le ctrl+click afin d'accéder en local au projet.
+
+## 4. Annexes
+
+Documentation HTML/CSS/JS : Consultez la [documentation officielle de MDN](https://developer.mozilla.org/fr/).
+
+Hébergement: Gratuit (pour l'instant Vercel).
+
+Accès au site : [Mon portfolio](https://portfolio-kohl-beta-23.vercel.app/)
+
+## 5. Améliorations
+
+- [] Ajout du formulaire de contact 
+
+- [] Refactor Css (plus léger)
+
+- [] Optimisation des images
+
+- [] Ajout d'un pannel administrateur pour l'ajout d'informations
+
+## 6. Contact
+
+Demande d'informations? Conseils? Amélioration?  N'hésitez pas à me contacter.

@@ -35,14 +35,5 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.clock{
-    position: absolute;
-    top: 230px;
-    left: 20px;
-    font-size: 20px;
-}
-.clock-green_Code{
-    color: var(--primary-color);
-    font-weight: bold;
-}
+
 </style>
