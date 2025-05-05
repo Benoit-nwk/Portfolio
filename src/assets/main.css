@@ -101,3 +101,118 @@ table{
   z-index: 1;
 }
 
+.clock{
+  position: absolute;
+  top: 230px;
+  left: 20px;
+  font-size: 20px;
+}
+.clock-green_Code{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.side-menu-container{
+  display: none;
+}
+
+.other-projects-phone{
+  display:none;
+}
+
+@media (max-width: 768px) {
+  .elipse {
+    width: 95%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .clock{
+    display: none;
+  }
+  .container{
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+  }
+
+  .nav-anchor{
+    display: none;
+  }
+
+  nav{
+    justify-content: center;
+  };
+
+  .return_to_home {
+    transition: none;
+    margin: 0 auto;
+}
+.menu{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background:none; 
+  border: none;
+}
+
+.side-menu-container{
+  display: block;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -500px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 3rem;
+  transition: left 0.3s ease;
+  z-index: 2;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.menu-close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+}
+
+.other-projects{
+  display: none;
+}
+
+.other-projects-phone{
+  display: block;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact{
+  flex-direction: column;
+}
+
+.button{
+  font-size: 1.5rem;
+}
+
+}
