@@ -5,9 +5,10 @@ import Projects from '@/Data/Projects.json';
 <template>
 <section class="project-container">
   <article v-for="project in Projects" class="project-card">
+    <img :src="project.image" alt="project image"/>
     <h2>{{ project.name }}</h2>
     <p>{{ project.description }}</p>
-    <a :href="project.repository" title="github du projet">Lien du projet</a>
+    <a :href="project.repository" title="github du projet">Page Github du projet</a>
   </article>
 </section>
 </template>
@@ -26,10 +27,15 @@ import Projects from '@/Data/Projects.json';
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 200px;
+    height: f600px;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px var(--primary-color);
     transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--primary-color);
 }
 </style>
