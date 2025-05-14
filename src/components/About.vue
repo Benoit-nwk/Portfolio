@@ -13,7 +13,7 @@
         <article>
             <h2>Mon parcours</h2>
             <p>Pendant le cursus de développeur web et web mobile, j'ai travaillé sur divers projets, allant de la création de sites vitrines à des applications web complexes intégrant des API. J'ai acquis une solide expérience dans le développement front-end et back-end. </p>
-            <a href="/public/documents/CV_Nowak_Benoit.pdf" title="télécharger le cv">Télécharger mon CV</a>
+            <a href="/documents/CV_Nowak_Benoit.pdf" title="télécharger le cv">Télécharger mon CV</a>
         </article>
         <article>
             <h2>Mes compétences</h2>
