@@ -143,6 +143,40 @@ input{
   border: none;
 }
 
+.image_bento {
+    width: 200px;
+    height: 200px;
+}
+
+.bento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+article {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: start;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 1rem;
+    padding : 2rem;
+}
+
+aside{
+    width: 50%;
+    padding: 2rem;
+    >p{
+        text-align: start;
+    }
+}
+
 @media (max-width: 768px) {
   .elipse {
     width: 95%;
@@ -240,6 +274,33 @@ input{
 
 textarea {
   width: 20rem;
+}
+
+
+
+article {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    border: 0.2rem solid var(--primary-color);
+    border-radius: 1rem;
+    padding : 1rem;
+    text-align: center;
+}
+
+aside{
+    width: 70%;
+    padding: 0;
+    >p{
+        text-align: center;
+    }
+}
+
+.image2{
+  display: none;
 }
 
 }
