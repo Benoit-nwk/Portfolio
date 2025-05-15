@@ -54,28 +54,5 @@ const sendEmail = () =>{
 </template>
 
 <style scoped>
-form{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-textarea {
-  resize: none;
-  width: 30rem;
-  height: 10rem;
-  font-family: var(--text-font);
-  font-size: 1.2rem;
-  border-radius: 5px;
-  border: none;
-}
-input{
-  width: 20rem;
-  height: 2rem;
-  font-family: var(--text-font);
-  font-size: 1.2rem;
-  border-radius: 5px;
-  border: none;
-}
+
 </style>
