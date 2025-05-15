@@ -1,56 +1,81 @@
 <script setup>
 import NavigationBar from '@/components/NavigationBar.vue';
-import Contact from '@/components/Contact.vue';
+import emailjs from '@emailjs/browser';
+import { ref } from 'vue';
+const form = ref(null);
+
+const emailGmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+
+const sendEmail = () =>{
+
+  if(!form.value.email.value.match(emailGmailRegex)) {
+    alert('Seule les adresses gmail sont acceptées');
+  }else
+  emailjs.sendForm('service_43lys3m','template_4ofgode', form.value,{
+    publicKey: '5zePHXQ2ARQUKU8ny'
+  })
+  .then(
+    ()=>{
+      alert('Votre message a bien été envoyé');
+    },
+    (error)=>{
+      alert('Une erreur est survenue, veuillez réessayer' + error);
+    }
+  )
+}
 </script>
 
 <template>
 <NavigationBar />
 <h1>Contactez-moi!</h1>
 <section>
-  <p>Vous pouvez m’envoyer un mail ou m’appeler directement en cliquant sur le bouton correspondant: </p>
-  <Contact />
-  <p>Je suis disponible du Lundi au Vendredi de 09h00 à 17h00</p>
-    <div class="loader-container">
-      <p>Le formulaire de contact arrive bientôt!</p>
-    <div class="loader"></div>
-  </div>
+  <p>Vous pouvez remplir ce formulaire de contact:</p>
+  <form ref="form" @submit.prevent="sendEmail">
+
+    <label for="title">Objet:</label>
+    <input type="text" id="title" name="title" required placeholder="Ex: Demande de devis">
+
+    <label for="email">Votre adresse mail: (gmail)</label>
+    <input type="email" id="email" name="email" required placeholder="Ex: john.doe@mail.com">
+
+    <label for="name">Votre nom:</label>
+    <input type="text" id="name" name="name" required placeholder="Ex: John Doe">
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required ></textarea>
+
+    <button class="button" type="submit">Envoyer</button>
+
+  </form>
+  <p>Je reste à disposition du Lundi au Vendredi de 9h00 à 18h00</p>
+  
 </section>
 
 </template>
 
 <style scoped>
-
-.loader-container {
+form{
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 2rem;
 }
-
-.loader {
-  width: fit-content;
-  font-weight: bold;
-  font-family: monospace;
-  font-size: 30px;
-  clip-path: inset(0 3ch 0 0);
-  animation: loading 1s steps(4) infinite;
+textarea {
+  resize: none;
+  width: 30rem;
+  height: 10rem;
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
 }
-.loader:before {
-  content:"Loading..."
-}
-@keyframes loading {to{clip-path: inset(0 -1ch 0 0)}}
-
-@media screen and (max-width: 768px) {
-  p{
-    margin: 0 2rem;
-  }
-  .loader-container {
-    margin: 2rem 0;
-  }
-  .loader {
-    font-size: 20px;
-    margin: 2rem 0;
-  }
+input{
+  width: 20rem;
+  height: 2rem;
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
 }
 </style>
