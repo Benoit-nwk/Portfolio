@@ -6,7 +6,6 @@ const form = ref(null);
 
 const emailGmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
-
 const sendEmail = () =>{
 
   if(!form.value.email.value.match(emailGmailRegex)) {
