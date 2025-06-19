@@ -36,9 +36,7 @@ Accès au site : [Mon portfolio](https://portfolio-kohl-beta-23.vercel.app/)
 
 ## 5. Améliorations
 
-- [] Ajout du formulaire de contact 
-
-- [] Refactor Css (plus léger)
+- [X] Ajout du formulaire de contact 
 
 - [] Optimisation des images
 
