@@ -1,14 +1,11 @@
 <script setup>
-import NavigationBar from '@/components/NavigationBar.vue';
-import NameAndJob from '@/components/NameAndJob.vue';
-import JavascriptClock from '@/components/JavascriptClock.vue';
 </script>
 
 <template>
-<NavigationBar />
     <section class="home">
-        <JavascriptClock />
-        <NameAndJob />
+        <h2>Website under maintenance...</h2>
+        <p>Wait for the new version to be deployed</p>
+        <div class="loader"></div>
     </section>
 </template>
 

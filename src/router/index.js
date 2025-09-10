@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import ContactView from '../views/ContactView.vue'
-import ProjectsView from '../views/ProjectsView.vue'
-import AboutView from '../views/AboutView.vue'
+import Noway from '../views/Noway.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -12,19 +11,13 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: ContactView,
+      path:'/404',
+      name: '404',
+      component: Noway,
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: ProjectsView,
-    },
-    {
-      path:'/about',
-      name:'about',
-      component: AboutView,
+      path:'/:pathMatch(.*)*',
+      redirect: '/404'
     }
   ],
 })
