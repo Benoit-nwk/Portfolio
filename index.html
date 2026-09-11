@@ -1,17 +1,140 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/public/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Benoit Nowak, développeur web et mobile.">
-    <meta name="keywords" content="Benoit Nowak, portfolio, développeur, web, mobile">
-    <meta name="author" content="Benoit Nowak">
-    <meta name="theme-color" content="#1B1B1B">
-    <title>Benoit Nowak - Portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <title>Muralis Studio — Décoration végétale sur-mesure</title>
+    <!-- Google Fonts pour un style élégant -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo-container">
+            <span class="logo-text">MURALIS STUDIO</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#concept">Le concept</a>
+            <a href="#realisations">Réalisations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION AVEC IMAGE DE FOND -->
+    <section class="hero">
+        <div class="hero-bg-container">
+            <!-- IMPORTANT : Remplace "fond-hero.jpg" par le nom exact de ton image de fond -->
+            <img src="fond-hero.jpg" alt="Ambiance décoration végétale Muralis Studio" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="subtitle">CRÉATIONS VÉGÉTALES SUR-MESURE</span>
+            <h1>La nature prend racine dans vos espaces.</h1>
+            <p>Muralis Studio imagine et confectionne des murs végétaux stabilisés et artificiels, pour les professionnels et les particuliers.</p>
+            <a href="#realisations" class="btn-primary">Découvrir nos créations</a>
+        </div>
+    </section>
+
+    <!-- SECTION CONCEPT / TEXTE -->
+    <section id="concept" class="concept-section">
+        <div class="concept-grid">
+            <div class="concept-img-box">
+                <!-- Remplace par l'image de ton choix -->
+                <img src="panneau-zoom.jpg" alt="Détail panneau végétal stabilisé" class="rounded-img-concept">
+            </div>
+            <div class="concept-text-box">
+                <span class="section-tag">LE CONCEPT</span>
+                <h2>Un paysage vivant, sans contrainte.</h2>
+                <p>Nos compositions n'exigent aucune eau, ni lumière ni entretien. Idéal pour les professionnels (salons, restaurants, bureaux) et les particuliers en quête de beauté sans souci au quotidien.</p>
+                <ul class="features-list">
+                    <li>✓ Zéro entretien</li>
+                    <li>✓ Durable</li>
+                    <li>✓ Sur-mesure</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ETAPES -->
+    <section class="steps-section">
+        <div class="steps-header">
+            <h2>De l'esquisse à la pose.</h2>
+            <p>Un accompagnement personnalisé et rigoureux à chaque étape de votre projet.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-item">
+                <span class="step-num">01</span>
+                <h3>Écoute & conception</h3>
+                <p>Analyse de vos espaces, de vos envies et de la lumière.</p>
+            </div>
+            <div class="step-item">
+                <span class="step-num">02</span>
+                <h3>Composition artisanale</h3>
+                <p>Création sur-mesure dans notre atelier avec des végétaux d'élite.</p>
+            </div>
+            <div class="step-item">
+                <span class="step-num">03</span>
+                <h3>Installation soignée</h3>
+                <p>Pose finale dans les règles de l'art pour un rendu impeccable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION GALERIE / REALISATIONS (PROJET UNIQUE + BIENTOT) -->
+    <section id="realisations" class="gallery-section">
+        <div class="gallery-header">
+            <div>
+                <span class="section-tag">PROJETS & VISUELS</span>
+                <h2>Des créations qui transforment les lieux.</h2>
+            </div>
+            <p class="gallery-desc">Découvrez notre panneau signature (2m x 80cm), conçu pour sublimer les intérieurs de prestige.</p>
+        </div>
+
+        <div class="gallery-grid single-project-grid">
+            <!-- Carte Projet Vertical -->
+            <div class="gallery-card featured-card">
+                <!-- IMPORTANT : Remplace "panneau-signature.jpg" par le nom exact de ta photo verticale -->
+                <img src="panneau-signature.jpg" alt="Panneau végétal signature 2m x 80cm" class="vertical-img">
+                <div class="gallery-info">
+                    <h3>Panneau Végétal Signature (2m x 80cm)</h3>
+                    <p>Stabilisé & Artificiel — Pièce unique sur-mesure</p>
+                </div>
+            </div>
+            
+            <!-- Carte "Projets à venir" -->
+            <div class="gallery-card coming-soon-card">
+                <div class="coming-soon-content">
+                    <span class="coming-soon-tag">Bientôt</span>
+                    <h3>D'autres projets à venir...</h3>
+                    <p>De nouvelles créations sur-mesure pour nos clients professionnels et particuliers s'ajouteront prochainement ici.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <section id="contact" class="footer-section">
+        <div class="footer-top">
+            <div class="footer-cta">
+                <h2>Faisons entrer la nature chez vous.</h2>
+                <p>Pour vos projets d'agencement, contactez-nous dès aujourd'hui pour une étude sur-mesure.</p>
+            </div>
+            <div class="footer-contact-info">
+                <h3>Contact</h3>
+                <p>Téléphone : 06 58 99 21 89</p>
+                <p>E-mail : muralis.studio@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>MURALIS STUDIO</span>
+            <div class="legal-mentions">
+                <p>Micro-entreprise — TVA non applicable, art. 293 B du CGI</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
